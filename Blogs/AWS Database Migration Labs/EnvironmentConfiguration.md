@@ -1,6 +1,6 @@
 # Environment Configuration
 
-This section describes the steps to provision the AWS resources that are required for this database migraiton walkthrough. We use [AWS CloudFormation][cfn] to create a network topology that includes a simple [Amazon Virtual Privsate Cloud (Amazon VPC)][vpc] with 3 public subnets to deploy the [AWS Database Migration Service (AWS DMS)][aws-dms] replicaiton instnaces, as well as [Amazon Relational Database Service (Amazon RDS)][rds] instance for the target database. Additionally, it provisions an [Amazon Elastic Compute Cloud (EC2)][ec2] instance to host the tools that we use in this migration like the [AWS Schema Conversion Tool (AWS SCT)][aws-sct]. AWS CloudFormation simples provisioning the infrastructure, so we can concentrate on tasks related to data migration.
+This section describes the steps to provision the AWS resources that are required for this database migraiton walkthrough. We use [AWS CloudFormation][cfn] to create a network topology that includes a simple [Amazon Virtual Privsate Cloud (Amazon VPC)][vpc] with 3 public subnets to deploy the [AWS Database Migration Service (AWS DMS)][aws-dms] replicaiton instnaces, as well as [Amazon Relational Database Service (Amazon RDS)][rds] instance for the target database. Additionally, it provisions an [Amazon Elastic Compute Cloud (EC2)][ec2] instance to host the tools that we use in this migration like the [AWS Schema Conversion Tool (AWS SCT)][aws-sct]. AWS CloudFormation simplifies provisioning the infrastructure, so we can concentrate on tasks related to data migration.
 
 After you have completed the migration, you can refer to the [Environment Cleanup][env-cleanup] guide to delete the resources in your account to stop incurring additional costs. 
 
@@ -40,7 +40,7 @@ The CloudFormation template gives you the flexibility to modify the VPC CIDR, an
 We will use the AWS Management Console to provision the AWS DMS resources, such as the replication instance, endpoints, and tasks. 
 
 # Getting Started
-1. Login to [AWS Management Consol][console] using your credentials. 
+1. Login to [AWS Management Console][console] using your credentials. 
 
 2.	Click on the drop-down menu on the top right corner of the screen, and select one of the 12 supported regions for this tutorial:
 
